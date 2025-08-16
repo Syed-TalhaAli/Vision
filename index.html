@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crystal Nest</title>
+  <link rel="shortcut icon" href="asset/images/logo/logo.PNG" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="asset/css/index.css" />
+  <link rel="stylesheet" href="asset/css/category.css" />
+  <link rel="stylesheet" href="asset/css/footer.css" />
+  <link rel="stylesheet" href="asset/css/media.css" />
+</head>
+
+<body>
+
+  <!-- loader  -->
+  <!-- <div class="welcome-wrapper">
+    <video autoplay muted loop>
+      <source src="asset/video/Welcome to Crystal Nest.mp4" type="video/mp4" />
+    </video>
+  </div> -->
+  <!-- loader/ -->
+
+  <div class="wrapper"> <!-- wrapper start -->
+
+    <!-- cursor  -->
+    <div class="cursor">
+      <div></div>
+    </div>
+    <!-- cursor/  -->
+
+    <div class="main-screen"> <!-- main screen -->
+
+      <!-- open category toggle -->
+      <div class="collection_wrapper">
+        <div class="close_collection">
+          <strong class="closeCol">&#x2715;</strong>
+        </div>
+        <div class="collection_card1">
+          <ul>
+            <li data-type="earrings">Earrings</li>
+            <li data-type="rings">Rings</li>
+            <li data-type="necklaces">Necklaces</li>
+            <li data-type="bracelets">Bracelets</li>
+          </ul>
+        </div>
+        <div class="collection_card2">
+          <h2>Earings</h2>
+          <div class="collection_images">
+            <img src="asset/images/category/p1.jpg" id="product-image" alt="" />
+          </div>
+          <div class="collection_des">
+            <p>Starting Form : &nbsp; <strong>$169</strong></p>
+            <a href="#" class="view_collection">View Collection</a>
+          </div>
+        </div>
+        <div class="collection_card3">
+          <img src="asset/images/category/p8.webp" class="category_img" alt="" />
+        </div>
+      </div>
+      <!-- close category toggle -->
+
+      <!-- header start -->
+      <header id="hero">
+        <div class="logo">
+          <a href="index.html"><img src="asset/images/logo/logo.PNG" alt="logo" /></a>
+        </div>
+        <div class="navbar">
+          <i class="fa-solid fa-xmark" id="closeMenu"></i>
+          <nav>
+            <a href="index.html"><img src="asset/images/logo/logo.PNG" class="sm-logo" alt="logo" /></a>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="new_arrival.html">NEW ARRIVAL</a></li>
+              <li><a href="special-offers.html">SPECIAL OFFER</a></li>
+              <li><a href="product-card.html">PRODUCTS</a></li>
+              <li><a href="about-us.html">ABOUT US</a></li>
+              <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="cart">
+          <div class="search">
+            <div class="dropdown">
+              <button class="dropbtn" id="col-type">CATEGORY</button>
+            </div>
+          </div>
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <i class="fa-solid fa-bars" id="noneMenu"></i>
+        </div>
+      </header>
+      <!-- header end -->
+
+      
+      <section class="main-screen_sec">
+        <div class="slide-container bigScreen">
+          <video autoplay muted loop class="slider-video active">
+            <source src="asset/video/01-1.mp4" type="video/mp4" />
+          </video>
+          <video autoplay muted loop class="slider-video">
+            <source src="asset/video/02-1.mp4" type="video/mp4" />
+          </video>
+          <video autoplay muted loop class="slider-video">
+            <source src="asset/video/03-1.mp4" type="video/mp4" />
+          </video>
+
+          <span class="prevBtn">&#10094;</span>
+          <span class="nextBtn">&#10095;</span>
+
+          <div class="dotsContainer">
+            <div class="dot active" data-index="0"></div>
+            <div class="dot" data-index="1"></div>
+            <div class="dot" data-index="2"></div>
+          </div>
+        </div>
+
+        <div class="slide-container smallScreen">
+          <video autoplay muted loop class="slider-video smVideo">
+            <source src="asset/video/vid-1.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+    </div> <!-- main screen -->
+
+    <!-- Shop By Category start -->
+    <section class="collection-sec">
+      <div class="category-head">
+        <h1 class="move-right sections_heading">Collection</h1>
+      </div>
+      <div class="category-data">
+        <div class="category-nav">
+          <ul>
+            <ul>
+              <li>
+                <a href="#" class="active" data-category="diamond">Diamond</a>
+              </li>
+              <li><a href="#" data-category="amber">Amber</a></li>
+              <li><a href="#" data-category="amethyst">Amethyst</a></li>
+              <li><a href="#" data-category="ruby">Ruby</a></li>
+              <li><a href="#" data-category="turquoise">Turquoise</a></li>
+            </ul>
+          </ul>
+        </div>
+        <div class="scroll-hand">
+          <img src="asset/images/Hand.webp" class="hand" alt="hand" />
+        </div>
+        <div class="category-card"></div>
+      </div>
+    </section>
+    <!-- Shop By Category end -->
+
+    <!-- diary weddin images start -->
+    <section>
+
+      <div class="diary_heading">
+        <h2 class="sections_heading">Wedding Diaries</h2>
+      </div>
+
+      <div class="grid_images">
+        <div class="grid_img_card">
+          <img src="asset/images/wedding/1-1.jpg" alt="wedding-image" />
+        </div>
+        <div class="grid_img_card">
+          <img src="asset/images/wedding/1-2.jpg" alt="wedding-image" />
+        </div>
+        <div class="grid_img_card">
+          <img src="asset/images/wedding/1-3.jpg" alt="wedding-image" />
+        </div>
+        <div class="grid_img_card">
+          <img src="asset/images/wedding/1-4.jpg" alt="wedding-image" />
+        </div>
+      </div>
+    </section>
+    <!-- diary weddin images end -->
+
+    <!-- feature products  start -->
+    <section>
+
+      <div class="diary_heading">
+        <h2 class="sections_heading">Feature Products</h2>
+      </div>
+
+      <div class="feature_products">
+        <div class="card">
+      <div class="basicInfo">
+        <div class="title">
+          <div class="category">Diamond</div>
+          <div class="name">Ring</div>
+        </div>
+        <div class="images">
+          <div class="img">
+              <img src="asset/images/product/Feature Products/1.png" />
+          </div>
+        </div>
+        <div class="addCard">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+      </div>
+      <div class="more">
+        <div class="stars">
+          <i class="fa-regular fa-star text-yellow"></i>
+          <i class="fa-regular fa-star text-yellow"></i>
+          <i class="fa-regular fa-star text-yellow"></i>
+          <i class="fa-regular fa-star text-yellow"></i>
+          <i class="fa-regular fa-star text-yellow"></i>
+        </div>
+        <div class="price">$500.09</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="basicInfo">
+        <div class="title">
+          <div class="category">Turquoise</div>
+          <div class="name">Necklaces</div>
+        </div>
+        <div class="images">
+          <div class="img">
+              <img src="asset/images/product/Feature Products/5.png" />
+          </div>
+        </div>
+        <div class="addCard">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+      </div>
+      <div class="more">
+        <div class="stars">
+          <i class="fa-regular fa-star text-yellow"></i>
+          <i class="fa-regular fa-star text-yellow"></i>
+          <i class="fa-regular fa-star text-yellow"></i>
+          <i class="fa-regular fa-star text-yellow"></i>
+          <i class="fa-regular fa-star text-yellow"></i>
+        </div>
+        <div class="price">$299.98</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="basicInfo">
+        <div class="title">
+          <div class="category">Diamond</div>
+          <div class="name">Necklaces</div>
+        </div>
+        <div class="images">
+          <div class="img">
+              <img src="asset/images/product/Feature Products/7.png" />
+          </div>
+        </div>
+        <div class="addCard">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+      </div>
+      <div class="more">
+        <div class="stars">
+          <i class="fa-regular fa-star text-yellow"></i>
+          <i class="fa-regular fa-star text-yellow"></i>
+          <i class="fa-regular fa-star text-yellow"></i>
+          <i class="fa-regular fa-star text-yellow"></i>
+          <i class="fa-regular fa-star text-yellow"></i>
+        </div>
+        <div class="price">$999.50</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="basicInfo">
+        <div class="title">
+          <div class="category">Amethyst</div>
+          <div class="name">Pendant</div>
+        </div>
+        <div class="images">
+          <div class="img">
+              <img src="asset/images/product/Feature Products/8.png" />
+          </div>
+        </div>
+        <div class="addCard">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+      </div>
+      <div class="more">
+        <div class="stars">
+          <i class="fa-regular fa-star text-yellow"></i>
+          <i class="fa-regular fa-star text-yellow"></i>
+          <i class="fa-regular fa-star text-yellow"></i>
+          <i class="fa-regular fa-star text-yellow"></i>
+          <i class="fa-regular fa-star text-yellow"></i>
+        </div>
+        <div class="price">$230.50</div>
+      </div>
+    </div>
+      </div>
+    </section>
+    <!-- feature products end -->
+
+    <!-- rating section start -->
+    <section class="ratings-summary">
+
+      <div class="ratings-bars">
+        <div class="bar-row">
+          <span>★★★★★</span>
+          <div class="bar">
+            <div style="width: 90%"></div>
+          </div>
+          <span>90%</span>
+        </div>
+        <div class="bar-row">
+          <span>★★★★</span>
+          <div class="bar">
+            <div style="width: 5%"></div>
+          </div>
+          <span>5%</span>
+        </div>
+        <div class="bar-row">
+          <span>★★★</span>
+          <div class="bar">
+            <div style="width: 3%"></div>
+          </div>
+          <span>3%</span>
+        </div>
+        <div class="bar-row">
+          <span>★★</span>
+          <div class="bar">
+            <div style="width: 2%"></div>
+          </div>
+          <span>2%</span>
+        </div>
+        <div class="bar-row">
+          <span>★</span>
+          <div class="bar">
+            <div style="width: 0%"></div>
+          </div>
+          <span>0%</span>
+        </div>
+      </div>
+
+      <div class="average-rating">
+        <h2>4.0</h2>
+        <div class="stars">★★★★☆</div>
+        <p>46 Ratings</p>
+      </div>
+
+      <div class="recent-rating">
+        <h2>4.8</h2>
+        <div class="stars">★★★★★</div>
+        <p>Last Month</p>
+      </div>
+    </section>
+    <!-- rating section end -->
+
+    <!-- review section start -->
+    <section class="reviews">
+      <div class="review-card">
+        <img src="asset/images/reviews/women.jpg" alt="Metlinda Parker" />
+        <div class="stars">★★★★★</div>
+        <p>Sed facilisi tortor mauris in vestibulum turpis ac...</p>
+        <h4>Metlinda Parker</h4>
+      </div>
+
+      <div class="review-card">
+        <img src="asset/images/reviews/women2.jpg" alt="Matthew Bennett" />
+        <div class="stars">★★★★☆</div>
+        <p>Mattis turpis sed nisi ullamcorper pretium...</p>
+        <h4>Matthew Bennett</h4>
+      </div>
+
+      <div class="review-card">
+        <img src="asset/images/reviews/men.jpg" alt="Sophia Rodriguez" />
+        <div class="stars">★★★★☆</div>
+        <p>Nisl purus diam morbi rhoncus pellentesque...</p>
+        <h4>Sophia Rodriguez</h4>
+      </div>
+
+      <div class="review-card">
+        <img src="asset/images/reviews/men2.jpg" alt="Ava Mitchell" />
+        <div class="stars">★★★☆☆</div>
+        <p>Convallis viverra viverra quisque ornare egestas...</p>
+        <h4>Ava Mitchell</h4>
+      </div>
+
+      <div class="review-card">
+        <img src="asset/images/reviews/men3.jpg" alt="Christopher Mitchell" />
+        <div class="stars">★★★☆☆</div>
+        <p>Maecenas mauris eget venenatis auctor nulla...</p>
+        <h4>Christopher Mitchell</h4>
+      </div>
+    </section>
+    <!-- review section start -->
+
+    <!-- footer section start -->
+    <footer>
+
+      <div class="footer-row">
+        <div class="footer-col">
+          <img src="asset/images/logo/logo.PNG" alt="brand logo" class="footer-heading" />
+          <p class="slogan">
+            Distinctive jewellery, designed for those who cherish quality and
+            elegance.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Shop Online</h4>
+          <ul class="footerLinks">
+            <li><a href="product-card.html">Jewellery Materials</a></li>
+            <li><a href="product-card.html">Sizing Children's jewellery</a></li>
+            <li><a href="product-card.html">Delivery & Returns</a></li>
+            <li><a href="product-card.html">Order Tracking</a></li>
+            <li><a href="product-card.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Categories</h4>
+          <ul class="footerLinks">
+            <li><a href="product-card.html">Rings</a></li>
+            <li><a href="product-card.html">Accessories</a></li>
+            <li><a href="product-card.html">Earrings</a></li>
+            <li><a href="product-card.html">Gold Buckle</a></li>
+            <li><a href="product-card.html">Bracelets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Information</h4>
+          <ul class="footerLinks">
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Need Help?</h4>
+          <ul class="contact-list">
+            <li>
+              <strong>Head Office:</strong> 785 15h Street, Office 478,
+              Karachi, Pakistan
+            </li>
+            <li><strong>Tel:</strong> +92333-2991877</li>
+            <li><strong>Email:</strong> contact.crystalnest@gmail.com</li>
+          </ul>
+
+          <div class="footer-icons">
+            <h4>Social</h4>
+            <ul class="social-list">
+              <li><i class="fa-brands fa-facebook-f"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footerCopyWriteSec">
+        <p>Crystal Nest © 2025. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- footer section end -->
+
+  </div> <!-- wrapper end -->
+
+
+  <!-- all js files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <!-- js tilt library cdn -->
+  <script src="asset/js/index.js"></script>
+  <script src="asset/js/utility.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crystal Nest</title>
+  <link rel="shortcut icon" href="asset/images/logo/logo.PNG" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="asset/css/index.css" />
+  <link rel="stylesheet" href="asset/css/category.css" />
+  <link rel="stylesheet" href="asset/css/footer.css" />
+  <link rel="stylesheet" href="asset/css/media.css" />
+  <link rel="stylesheet" href="asset/css/checkout.css">
+</head>
+  <body>
+
+     <div class="wrapper"> <!-- wrapper start -->
+
+    <!-- cursor  -->
+    <div class="cursor">
+      <div></div>
+    </div>
+    <!-- cursor/  -->
+
+    <div class="main-screen"> <!-- main screen -->
+
+      <!-- open category toggle -->
+      <div class="collection_wrapper">
+        <div class="close_collection">
+          <strong class="closeCol">&#x2715;</strong>
+        </div>
+        <div class="collection_card1">
+          <ul>
+            <li data-type="earrings">Earrings</li>
+            <li data-type="rings">Rings</li>
+            <li data-type="necklaces">Necklaces</li>
+            <li data-type="bracelets">Bracelets</li>
+          </ul>
+        </div>
+        <div class="collection_card2">
+          <h2>Earings</h2>
+          <div class="collection_images">
+            <img src="asset/images/category/p1.jpg" id="product-image" alt="" />
+          </div>
+          <div class="collection_des">
+            <p>Starting Form : &nbsp; <strong>$169</strong></p>
+            <a href="#" class="view_collection">View Collection</a>
+          </div>
+        </div>
+        <div class="collection_card3">
+          <img src="asset/images/category/p8.webp" class="category_img" alt="" />
+        </div>
+      </div>
+      <!-- close category toggle -->
+
+      <!-- header start -->
+      <header id="hero">
+        <div class="logo">
+          <a href="index.html"><img src="asset/images/logo/logo.PNG" alt="logo" /></a>
+        </div>
+        <div class="navbar">
+          <i class="fa-solid fa-xmark" id="closeMenu"></i>
+          <nav>
+            <a href="index.html"><img src="asset/images/logo/logo.PNG" class="sm-logo" alt="logo" /></a>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="new_arrival.html">NEW ARRIVAL</a></li>
+              <li><a href="special-offers.html">SPECIAL OFFER</a></li>
+              <li><a href="product-card.html">PRODUCTS</a></li>
+              <li><a href="about-us.html">ABOUT US</a></li>
+              <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="cart">
+          <div class="search">
+            <div class="dropdown">
+              <button class="dropbtn" id="col-type">CATEGORY</button>
+            </div>
+          </div>
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <i class="fa-solid fa-bars" id="noneMenu"></i>
+        </div>
+      </header>
+      <!-- header end -->
+
+
+      <h2>Checkout</h2>
+
+  <div class="checkout-container">
+
+    <!-- Checkout Form -->
+    <div class="checkout-form">
+      <h2>Billing Details</h2>
+      <form id="checkoutForm">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <textarea name="address" rows="3" placeholder="Shipping Address" required></textarea>
+        
+        <h3>Payment Method</h3>
+        <select name="payment" required>
+          <option value="">-- Select Payment Method --</option>
+          <option value="cod">Cash on Delivery</option>
+          <option value="card">Credit/Debit Card</option>
+          <option value="paypal">PayPal</option>
+        </select>
+
+        <button type="submit">Place Order</button>
+      </form>
+    </div>
+
+    <!-- Order Summary -->
+    <div class="order-summary">
+      <h2>Order Summary</h2>
+      <ul id="orderItems"></ul>
+      <div class="total" id="orderTotal">Total: $0</div>
+    </div>
+
+  </div>
+
+
+  <!-- checkout end  -->
+
+
+  <!-- footer section start -->
+    <footer>
+
+      <div class="footer-row">
+        <div class="footer-col">
+          <img src="asset/images/logo/logo.PNG" alt="brand logo" class="footer-heading" />
+          <p class="slogan">
+            Distinctive jewellery, designed for those who cherish quality and
+            elegance.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Shop Online</h4>
+          <ul class="footerLinks">
+            <li><a href="product-card.html">Jewellery Materials</a></li>
+            <li><a href="product-card.html">Sizing Children's jewellery</a></li>
+            <li><a href="product-card.html">Delivery & Returns</a></li>
+            <li><a href="product-card.html">Order Tracking</a></li>
+            <li><a href="product-card.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Categories</h4>
+          <ul class="footerLinks">
+            <li><a href="product-card.html">Rings</a></li>
+            <li><a href="product-card.html">Accessories</a></li>
+            <li><a href="product-card.html">Earrings</a></li>
+            <li><a href="product-card.html">Gold Buckle</a></li>
+            <li><a href="product-card.html">Bracelets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Information</h4>
+          <ul class="footerLinks">
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Need Help?</h4>
+          <ul class="contact-list">
+            <li>
+              <strong>Head Office:</strong> 785 15h Street, Office 478,
+              Karachi, Pakistan
+            </li>
+            <li><strong>Tel:</strong> +92333-2991877</li>
+            <li><strong>Email:</strong> contact.crystalnest@gmail.com</li>
+          </ul>
+
+          <div class="footer-icons">
+            <h4>Social</h4>
+            <ul class="social-list">
+              <li><i class="fa-brands fa-facebook-f"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footerCopyWriteSec">
+        <p>Crystal Nest © 2025. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- footer section end -->
+
+      </div>
+      </div>
+
+
+       <!-- all js files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <!-- js tilt library cdn -->
+  <script src="asset/js/index.js"></script>
+  <script src="asset/js/utility.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+:root {
+  --green: #3be798;
+  --violet: #7f6eb2;
+  --dark: #2b2b2b;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: system-ui;
+  background-image: linear-gradient(to top right, var(--green), var(--violet));
+}
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 30px;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: var(--dark);
+}
+.basicInfo {
+  background-color: #f5f5f5;
+  border-radius: 30px;
+  padding: 25px;
+  position: relative;
+}
+.title .category,
+.title .info {
+  font-weight: 600;
+  font-size: small;
+}
+.title .name {
+  font-weight: bold;
+  font-size: xx-large;
+  padding-bottom: 3px;
+}
+.card .img {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.card .img img {
+  width: 80%;
+  transform: scale(1) rotate(20deg);
+  transition: 0.5s;
+}
+
+.card .img::after {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  height: 40px;
+  background-color: #000;
+  content: "";
+  right: 30px;
+  z-index: -1;
+  border-radius: 50%;
+  opacity: 0.2;
+  filter: blur(10px);
+  transition: 0.5s;
+  
+}
+
+.more {
+  padding: 25px;
+}
+
+.more .stars,
+.more .price {
+  display: inline-block;
+}
+
+.more .price {
+  float: right;
+  color: #eee;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.more .stars {
+  color: #9b9a9a;
+}
+
+.text-yellow {
+  color: rgb(209, 209, 6);
+}
+
+.addCard {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 3;
+}
+.addCard i {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: var(--green);
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  right: 90px;
+  bottom: -25px;
+  border: 5px solid var(--dark);
+  transition: 0.5s;
+  opacity: 0;
+  transform: translate(0, 10px);
+}
+.addCard::after,
+.addCard::before {
+  position: absolute;
+  bottom: 0;
+  background-color: transparent;
+  width: 48px;
+  height: 39px;
+  content: "";
+  right: 46px;
+  border-bottom-left-radius: 55%;
+  opacity: 0;
+  transform: translate(0, 20px);
+  box-shadow: 0 20px 0 0 var(--dark);
+  transition: 0.5s;
+}
+.addCard::after {
+  right: unset;
+  left: 107px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 55%;
+}
+/* animation */
+.card:hover .img img {
+  transform: scale(1.1) rotate(25deg) translate(0px);
+}
+.card:hover .img::after {
+  width: 90%;
+}
+.card:hover .addCard i,
+.card:hover .addCard::before,
+.card:hover .addCard::after {
+  opacity: 1;
+  transform: translate(0, 0);
+}
